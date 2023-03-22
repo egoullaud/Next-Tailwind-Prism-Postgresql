@@ -1,13 +1,12 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Link from "next/link"
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main>
-      <h1>Home</h1>
+    <main className="py-4 px-48">
+      <Link className="bg-teal-500 text-black font-medium py-2 px-4 rounded-md"
+       href='/dashboard'
+      >Go to the dashboard</Link>
     </main>
   )
 }
